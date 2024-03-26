@@ -17,6 +17,10 @@ const config: Config = {
 					dimmed: "rgb(60,60,60)",
 				},
 			},
+			fontFamily: {
+				poetsenone: "var(--font-poetsenone)",
+				passionone: "var(--font-passionone)",
+			},
 		},
 	},
 	plugins: [],
