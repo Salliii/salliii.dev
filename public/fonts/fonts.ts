@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import {Passion_One} from "next/dist/compiled/@next/font/dist/google";
+import {Passion_One} from "next/font/google";
 
 export const fontPoetsenOne = localFont({
 	src: "PoetsenOne-Regular.ttf",
