@@ -1,5 +1,6 @@
 import React from "react";
 import {fontPassionOne, fontPoetsenOne} from "@/public/fonts/fonts";
+import "@/styles/globals.css";
 
 export default function RootLayout({
 	children,
