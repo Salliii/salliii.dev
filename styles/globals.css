@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+	* {
+		@apply
+		p-0
+		m-0
+		box-border
+	}
+
+	html,
+	body {
+		@apply
+		w-screen
+		h-screen
+	}
 }
 
 @layer components {
