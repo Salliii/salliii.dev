@@ -1,4 +1,5 @@
 import React from "react";
+import {fontPassionOne, fontPoetsenOne} from "@/public/fonts/fonts";
 
 export default function RootLayout({
 	children,
@@ -6,8 +7,9 @@ export default function RootLayout({
 	children: React.ReactNode,
 }) {
 	return (
-		<html lang={"en"}>
-			<body>
+		<html className={`${fontPoetsenOne.variable} ${fontPassionOne.variable}`}
+			lang={"en"}>
+			<body className={`${fontPassionOne.className}`}>
 				{children}
 			</body>
 		</html>
