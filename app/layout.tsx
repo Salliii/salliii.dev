@@ -11,7 +11,7 @@ export default function RootLayout({
 	return (
 		<html className={`${fontPoetsenOne.variable} ${fontPassionOne.variable}`}
 			lang={"en"}>
-			<body className={`${fontPassionOne.className}`}>
+			<body className={`${fontPassionOne.className} bg-black`}>
 				<HeaderComponent links={[
 					{name: "Home", href: "/"},
 					{name: "About", href: "/#about"},
