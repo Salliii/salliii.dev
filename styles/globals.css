@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* only include if used */
 @layer base {
 	* {
 		@apply
@@ -22,4 +23,55 @@
 }
 
 @layer utilities {
+}
+
+/* always include */
+.underline-on:before,
+.underline-off:after {
+	content: "";
+	@apply
+	h-1
+	rounded-full
+	absolute
+	-bottom-1
+	-z-10
+}
+
+.underline-on:before {
+	animation: 250ms ease-in-out keyframe-underline-on forwards;
+	@apply
+	left-0
+}
+
+.underline-off:after {
+	animation: 250ms ease-in-out keyframe-underline-off forwards;
+	@apply
+	right-0
+}
+
+/* keyframes */
+@keyframes keyframe-underline-on {
+	from {
+		@apply
+		w-0
+		opacity-50
+	}
+	to {
+		@apply
+		w-full
+		opacity-100
+	}
+}
+
+@keyframes keyframe-underline-off {
+	from {
+		@apply
+		w-full
+		opacity-100
+	}
+	to {
+		@apply
+		w-0
+		opacity-50
+	}
 }
