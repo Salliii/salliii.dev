@@ -1,4 +1,4 @@
-import {HeadlineComponent} from "@/components/headline.component";
+import HeadlineComponent from "@/components/headline.component";
 
 export default function RootPage() {
 	return (

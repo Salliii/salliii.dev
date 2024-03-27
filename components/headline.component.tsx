@@ -6,7 +6,7 @@ export type HeadlineComponentProps = {
 	children?: React.ReactNode,
 } & HTMLAttributes<HTMLDivElement>
 
-export function HeadlineComponent(props: HeadlineComponentProps) {
+export default function HeadlineComponent(props: HeadlineComponentProps) {
 	return (
 		<div {...props} className={`${props.className} flex flex-row`}>
 			<span className={"text-text-dimmed select-none"}>
