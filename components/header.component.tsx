@@ -13,7 +13,7 @@ export type HeaderComponentProps = {
 }
 export default function HeaderComponent(props: HeaderComponentProps) {
 	return (
-		<header className={"w-full h-32 px-36 bg-black flex flex-row justify-between items-center z-[90]"}>
+		<header className={"w-full h-32 px-36 bg-black flex flex-row justify-between items-center fixed z-[90]"}>
 			<Link className={"text-5xl text-highlight-header font-poetsenone select-none"}
 				href={"/"}>
 				Salliii.dev
