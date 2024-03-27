@@ -17,6 +17,12 @@
 		w-screen
 		h-screen
 	}
+
+	::selection {
+		@apply
+		bg-highlight-content
+		text-text-basic
+	}
 }
 
 @layer components {
