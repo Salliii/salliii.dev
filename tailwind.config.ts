@@ -6,7 +6,22 @@ const config: Config = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				highlight: {
+					header: "rgb(74,146,234)",
+					content: "rgb(255, 48, 60)",
+				},
+				text: {
+					basic: "rgb(227,218,201)",
+					dimmed: "rgb(60,60,60)",
+				},
+			},
+			fontFamily: {
+				poetsenone: "var(--font-poetsenone)",
+				passionone: "var(--font-passionone)",
+			},
+		},
 	},
 	plugins: [],
 };
