@@ -13,16 +13,21 @@ export type HeaderComponentProps = {
 }
 export default function HeaderComponent(props: HeaderComponentProps) {
 	return (
-		<header className={"w-full h-32 px-36 bg-black flex flex-row justify-between items-center fixed z-[90]"}>
-			<Link className={"text-5xl text-highlight-header font-poetsenone select-none"}
+		<header className={"w-full h-24 px-8 bg-black flex flex-row justify-between items-center fixed \
+		2xl:h-32 2xl:px-36"}>
+			<Link className={"text-3xl text-highlight-header font-poetsenone select-none \
+			2xl:text-5xl"}
 				href={"/"}>
 				Salliii.dev
 			</Link>
-			<div className={"w-fit h-fit flex flex-row gap-12"}>
+			<div className={"w-fit h-fit hidden flex-row gap-8 \
+			2xl:gap-12 md:flex"}>
 				{
 					props.links.map((link) => {
 						return (
-							<Link className={"text-5xl text-text-basic font-poetsenone select-none relative z-[91] before:bg-highlight-header after:bg-highlight-header"}
+							<Link className={"text-3xl text-text-basic font-poetsenone select-none relative \
+							before:bg-highlight-header after:bg-highlight-header \
+							2xl:text-5xl"}
 								href={link.href}
 								key={link.name.toLowerCase()}
 								onMouseEnter={(event) => setUnderline(event.currentTarget, true)}

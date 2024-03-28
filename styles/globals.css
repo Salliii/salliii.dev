@@ -44,14 +44,17 @@
 }
 
 .underline-on:before {
-	animation: 250ms ease-in-out keyframe-underline-on forwards;
+	animation: 150ms ease-in-out keyframe-underline-on forwards;
 	@apply
+	w-0
 	left-0
 }
 
 .underline-off:after {
-	animation: 250ms ease-in-out keyframe-underline-off forwards;
+	animation: 150ms ease-in-out keyframe-underline-off forwards;
+	animation-delay: 150ms;
 	@apply
+	w-full
 	right-0
 }
 
