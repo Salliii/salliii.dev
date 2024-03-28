@@ -6,6 +6,7 @@
 | tag | description |
 | :-- | :---------- |
 | v0.1.0-alpha | constructor page for desktop |
+| v0.2.0-alpha | constructor page for mobile |
 
 <!-- badge -->
 [badge-nextjs]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
